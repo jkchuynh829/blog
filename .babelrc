@@ -1,3 +1,17 @@
 {
-  "presets": ["env", "react"]
+  "presets": ["env", "react"],
+  "plugins": [
+    [
+      "react-css-modules",
+      {
+        "webpackHotModuleReloading": true,
+        "filetypes": {
+          ".scss": {
+            "syntax": "postcss-scss"
+          }
+        },
+        "generateScopedName": "[name]__[local]__[hash:base64:5]"
+      }
+    ]
+  ]
 }
