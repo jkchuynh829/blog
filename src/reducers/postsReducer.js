@@ -7,7 +7,7 @@ const postsReducer = (state = initial, action) => {
   const { type, payload } = action;
   switch (type) {
     case GET_ALL_POSTS:
-      return state;
+      return [...state, ...payload];
     default:
       return state;
   }

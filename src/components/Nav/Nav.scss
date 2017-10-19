@@ -1,5 +1,10 @@
+@import '../../scss/manifest';
+
 .container {
-  background-color: blue;
-  height: green;
+  background-color: $black50;
+  color: $white;
   width: 200px;
+  padding: $padding;
+  display: flex;
+  flex-direction: column;
 }

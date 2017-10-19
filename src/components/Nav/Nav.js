@@ -2,7 +2,8 @@ import React from 'react';
 import './Nav.scss';
 
 const Nav = () => <div styleName="container">
-  <h1>Hello</h1>
+  <div>Home</div>
+  <div>Author Post</div>
 </div>
 
 export default Nav;

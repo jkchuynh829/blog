@@ -1,13 +1,15 @@
 import React from 'react';
-import { Provider } from 'react-redux';
+import Aux from '../components/Aux/Aux';
 import Home from '../components/Home/Home';
+import Nav from '../components/Nav/Nav';
 
 
 /**
  * Rendered by index.js
  */
-const App = () => <div>
+const App = () => <Aux>
   <Home />
-</div>;
+  <Nav />
+</Aux>
 
 export default App;

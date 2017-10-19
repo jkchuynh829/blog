@@ -1,14 +1,12 @@
 import React from 'react';
-import FeedContainer from '../../containers/FeedContainer';
-import Nav from '../Nav/Nav';
+import Feed from '../Feed/Feed';
 import './Home.scss';
 
 /**
  * Rendered by App
  */
 const Home = () => <div styleName="container">
-  <FeedContainer />
-  <Nav />
+  <Feed />
 </div>;
 
 export default Home;

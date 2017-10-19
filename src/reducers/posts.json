@@ -2,11 +2,13 @@
   {
     "id": 1,
     "title": "My First Post",
+    "createdAt": "Today",
     "body": "This is my first post! WHOA!"
   },
   {
     "id": 2,
     "title": "My Second Post",
+    "createdAt": "Yesterday",
     "body": "This is my second post! HOLY SHIT!"
   }
 ]

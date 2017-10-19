@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
-import posts from '../../reducers/posts.json';
+import './Feed.scss';
 
 export default class Feed extends Component {
-  componentDidMount() {
-    const { actions } = this.props;
-    actions.getAllPosts(posts);
-  }
-
   render() {
-    const { posts, getAllPosts } = this.props;
     return <div styleName="container">
-      <h1>FEED!</h1>
+      <h1>Post #1</h1>
+      <h1>Post #2</h1>
     </div>;
   }
 }
