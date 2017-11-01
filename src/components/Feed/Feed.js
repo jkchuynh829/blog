@@ -1,11 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+import PostTile from '../PostTile/PostTile';
 import './Feed.scss';
 
-export default class Feed extends Component {
-  render() {
-    return <div styleName="container">
-      <h1>Post #1</h1>
-      <h1>Post #2</h1>
-    </div>;
-  }
-}
+const Feed = ({ posts }) =>
+  <div styleName="container">
+    <h1>Posts:</h1>
+    <div>
+      {posts.map(post => <PostTile
+        key={`${post.id}---${post.title}`}
+        id={post.id}
+        title={post.title}
+        createdAt={post.createdAt}
+        body={post.body}
+      />)}
+    </div>
+  </div>;
+
+Feed.propTypes = {
+  posts: PropTypes.array,
+};
+
+export default Feed;
