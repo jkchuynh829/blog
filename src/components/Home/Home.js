@@ -1,12 +1,15 @@
 import React from 'react';
-import Feed from '../Feed/Feed';
+import PostEditorContainer from '../../containers/PostEditorContainer';
+import FeedContainer from '../../containers/FeedContainer';
 import './Home.scss';
 
 /**
  * Rendered by App
  */
-const Home = () => <div styleName="container">
-  <Feed />
-</div>;
+const Home = () =>
+  <div styleName="container">
+    <FeedContainer />
+    <PostEditorContainer />
+  </div>;
 
 export default Home;

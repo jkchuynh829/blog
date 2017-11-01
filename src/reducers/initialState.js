@@ -1,3 +1,6 @@
 export default {
-  posts: []
+  posts: [],
+  current: {
+    post: {}
+  }
 };
